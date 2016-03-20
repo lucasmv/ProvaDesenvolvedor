@@ -1,0 +1,14 @@
+D:\Projetos\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\bin\Debug\Dominio.dll
+D:\Projetos\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\bin\Debug\Dominio.pdb
+D:\Projetos\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.dll
+D:\Projetos\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Desenv\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\bin\Debug\Dominio.dll
+C:\Users\Desenv\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Desenv\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Desenv\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.dll
+C:\Users\Desenv\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Lucas\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\bin\Debug\Dominio.dll
+C:\Users\Lucas\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Lucas\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\Lucas\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.dll
+C:\Users\Lucas\Desktop\Siteware\ProvaDesenvolvimentoLucasMagno\Dominio\obj\Debug\Dominio.pdb

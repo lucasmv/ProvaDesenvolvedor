@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Dominio.Entidades.Produto>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Preco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Promocao)
+        </th>
+        <th>
+            Selecionar
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td class="hidden">
+                @Html.HiddenFor(modelItem => item.Id, new { @class = "produto-id" })
+            </td>
+            <td class="produto-nome">
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Promocao)
+            </td>
+            <td>
+                <button type="button" class="btn btn-default btn-xs" aria-label="Left Align" onclick="AdicionaProduto(this);">
+                    <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                </button>
+            </td>
+        </tr>
+    }
+
+</table>

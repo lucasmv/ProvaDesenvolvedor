@@ -1,0 +1,112 @@
+﻿@model Dominio.Entidades.Carrinho
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Carrinho</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        <h4>Produtos</h4>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayName("Nome")
+                </th>
+                <th>
+                    @Html.DisplayName("Quantidade")
+                </th>
+                <th>
+                    @Html.DisplayName("Preço")
+                </th>
+                <th>
+                    @Html.DisplayName("Promoção")
+                </th>
+
+            </tr>
+
+            @foreach (var item in Model.Produtos)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Preco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Promocao)
+                </td>
+            </tr>
+            }
+
+        </table>
+
+    </div>
+}
+
+<div>
+    <span>Total - R$ @ViewBag.Total</span>
+</div>
+<div>
+    <input type="button" value="Adicionar Produto" onclick="ListarProdutos();" class="btn btn-primary" />
+    <input type="button" value="Zerar Carrinho" onclick="ZerarCarrinho();" class="btn btn-danger" />
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-produtos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Produtos</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-produto-carrinho" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Adicionar no carrinho</h4>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <span id="nome-produto-adicionar"></span>
+                </div>
+                <div id="quantidade-produto-adicionar">
+                    <input id="quantidade" type="number" min="1" class="control-label" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="AdicionarProduto();">Adicionar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/Carrinho/CarrinhoJS.js"></script>
